@@ -1,27 +1,48 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-07-30',
-  // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
   future: { compatibilityVersion: 4 },
 
-  // https://nuxt.com/modules
   modules: [
     '@nuxthub/core',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon'
   ],
 
-  // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {},
 
-  // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
-  runtimeConfig: {
-    public: {
-      // Can be overridden by NUXT_PUBLIC_HELLO_TEXT environment variable
-      helloText: 'Hello from the Edge 👋'
+  app: {
+    head: {
+      title: 'Frontend Engineer Portfolio',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Frontend Engineer Portfolio - Building SaaS Products' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
     }
   },
 
-  // https://eslint.nuxt.com
+  css: [
+    '@fontsource/fira-code/400.css',
+    '@fontsource/fira-code/600.css',
+    '@fontsource/jetbrains-mono/400.css',
+    '@fontsource/jetbrains-mono/600.css',
+    '~/assets/css/main.css'
+  ],
+
+  runtimeConfig: {
+    public: {
+      name: 'Jay Bharadia',
+      email: 'jay.p.bharadia@gmail.com',
+      github: 'https://github.com/jaybharadia',
+      linkedin: 'https://linkedin.com/in/jaybharadia',
+      twitter: 'https://twitter.com/jay_bharadia'
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {
@@ -30,6 +51,5 @@ export default defineNuxtConfig({
     }
   },
 
-  // https://devtools.nuxt.com
   devtools: { enabled: true }
 })
