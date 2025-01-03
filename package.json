@@ -11,22 +11,28 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.5.2",
-    "@nuxthub/core": "^0.7.4",
-    "nuxt": "^3.13.0",
-    "vue": "^3.4.38",
-    "vue-router": "^4.4.3",
-    "@vueuse/core": "^10.7.0",
-    "gsap": "^3.12.5",
     "@fontsource/fira-code": "^5.0.15",
     "@fontsource/jetbrains-mono": "^5.0.15",
-    "nuxt-icon": "^0.6.9"
+    "@nuxt/eslint": "^0.5.2",
+    "@nuxthub/core": "^0.7.4",
+    "@vueuse/core": "^10.11.1",
+    "@vueuse/motion": "^2.2.6",
+    "gsap": "^3.12.5",
+    "nuxt": "^3.13.0",
+    "nuxt-icon": "^0.6.9",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
+    "@inspira-ui/plugins": "^0.0.1",
     "@nuxt/eslint-config": "^0.5.2",
     "@nuxtjs/tailwindcss": "^6.11.0",
     "@tailwindcss/typography": "^0.5.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "eslint": "^9.9.1",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
     "vue-tsc": "^2.0.29",
     "wrangler": "^3.72.2"
   },
