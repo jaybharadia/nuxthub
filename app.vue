@@ -11,6 +11,11 @@
       >
         <HeroSection />
       </PatternBackground>
+
+      <!-- <SectionsPhotoGallery /> -->
+      <SectionsTechStack />
+
+      <SectionsMarquee />
       <AboutSection />
       <ConnectSection />
       <FooterSection />

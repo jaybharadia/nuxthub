@@ -16,10 +16,6 @@ const { text } = useTypewriter(phrases, {
   deletingSpeed: 50,
   pauseDuration: 2000,
 });
-
-const handleCollaborateClick = () => {
-  scrollToElement("connect");
-};
 </script>
 
 <template>
@@ -31,21 +27,17 @@ const handleCollaborateClick = () => {
 
     <div class="relative z-10 w-full">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">
-        Hi, I'm <span class="gradient-text">{{ name }}</span>
+        Hi, I'm <span class="text-primary">{{ name }}</span>
       </h1>
 
       <h2 class="text-xl md:text-2xl font-mono mb-6 text-gray-400 min-h-[2em]">
         {{ text }}<span class="animate-blink">|</span>
       </h2>
 
-      <p class="text-lg md:text-xl mb-8 text-gray-300">
-        Crafting Elegant UIs with Vue.js and Nuxt.js
-      </p>
-
       <div class="flex gap-4">
-        <button class="btn" @click="handleCollaborateClick()">
-          Let's Collaborate!
-        </button>
+        <a href="#connect">
+          <GradientButton bg-color="#000">Let's Collaborate!</GradientButton>
+        </a>
       </div>
     </div>
   </section>

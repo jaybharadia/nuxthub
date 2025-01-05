@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
     "@vueuse/motion/nuxt",
+    "@nuxt/image",
   ],
 
   hub: {},
